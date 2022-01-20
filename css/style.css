@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header
+{
+    margin-top: 20px;
+    height: 170px;
+}
+
+/* PRIMA SEZIONE */
+.section{
+    height: 650px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* OPACITA' GRIGIO SFONDO */
+.section:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#testo-sezione-uno{
+    color: white;
+    position: absolute;
+    width: 49.1%;
+    height: 20%;
+    bottom: 97px;
+    left: 72px;
+    z-index: 2;
+    font-size: 2.3em;
+
+}
+
+#testo-sezione-uno span{
+    font-size: 0.6em;
+    line-height: 1.3em;
+    display: block;
+}
+
+.second-section{
+    background-color: #0086FF;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.section-header{
+    height: 100px;
+    background-color: #ABCFE7;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.middle{
+    margin-left: 17px;
+    margin-right: 17px;
+    width: calc(60% - 34px);
+    background-color: #ABCFE7;
+    display: inline-block;
+    height: calc(100% - 140px);
+}
+
+.aside{
+    height: calc(100% - 140px);
+    background-color: #ABCFE7;
+    display: inline-block;
+    width: 20%;
+}
+
+.footer{
+    height: 70px;
+    background-color: #8801FE;
+    margin-bottom: 50px;
+}
+
+.width{
+    width: 100%;
+}
+
+.float{
+    float: left;
+}
+
+.round{
+    border-radius: 10px;
+}
+
+.relative{
+    position: relative;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ul.nav li{
+    display: inline;
+    text-transform: uppercase ;
+    color : lightgrey;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+ul.nav{
+    padding: 0px;
+}
+
+#logo{
+    padding-right: 1.7%;
+    width: 15.74%;
+    margin-bottom: 45px;
+}
