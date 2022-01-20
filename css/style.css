@@ -16,6 +16,25 @@ body{
     height: 170px;
 }
 
+#logo{
+    padding-right: 1.7%;
+    width: 15.74%;
+    margin-bottom: 45px;
+}
+
+/* BARRA DI NAVIGAZIONE */
+ul.nav{
+    padding: 0px;
+}
+
+ul.nav li{
+    display: inline;
+    text-transform: uppercase ;
+    color : lightgrey;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
 /* PRIMA SEZIONE */
 .section{
     height: 650px;
@@ -25,7 +44,23 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(0, 0, 0, 1);
+}
+
+#testo-sezione-uno{
+    color: white;
+    position: absolute;
+    width: 49.1%;
+    height: 20%;
+    bottom: 97px;
+    left: 72px;
+    z-index: 2;
+    font-size: 2.3em;
+}
+
+#testo-sezione-uno span{
+    font-size: 0.6em;
+    line-height: 1.3em;
+    display: block;
 }
 
 /* OPACITA' GRIGIO SFONDO */
@@ -38,52 +73,78 @@ body{
     border-radius: 10px;
 }
 
-#testo-sezione-uno{
-    color: white;
-    position: absolute;
-    width: 49.1%;
-    height: 20%;
-    bottom: 97px;
-    left: 72px;
-    z-index: 2;
-    font-size: 2.3em;
-
-}
-
-#testo-sezione-uno span{
-    font-size: 0.6em;
-    line-height: 1.3em;
-    display: block;
-}
-
+/* SECONDA SEZIONE */
 .second-section{
-    background-color: #0086FF;
-    height: 700px;
+    height: 825px;
     width: 100%;
     margin-bottom: 10px;
 }
 
+/* HEADER SECONDA SEZIONE */
 .section-header{
     height: 100px;
-    background-color: #ABCFE7;
     display: inline-block;
     margin-bottom: 20px;
 }
 
+.section-header h1{
+    font-size: 3em;
+}
+
+/* PARTE TRIPARTITA SECONDA SEZIONE */
 .middle{
-    margin-left: 17px;
-    margin-right: 17px;
-    width: calc(60% - 34px);
-    background-color: #ABCFE7;
+    margin: 0px 26px;
+    width: calc(60% - 52px);
     display: inline-block;
     height: calc(100% - 140px);
 }
 
 .aside{
     height: calc(100% - 140px);
-    background-color: #ABCFE7;
     display: inline-block;
     width: 20%;
+}
+
+/* IMMAGINI SECONDA SEZIONE */
+.left{
+    background-image: url(../img/img-1.jpg);
+}
+
+.right{
+    background-image: url(../img/img-3.jpg);
+}
+
+.img-middle{
+    background-image: url(../img/banner-2.jpg);
+}
+
+/* DIMENSIONI E POSIZIONE IMMAGINI SECONDA SEZIONE */
+.img-aside,
+.img-middle{
+    height: 265px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.img-aside:after,
+.img-middle:after {
+    position: absolute;
+    width: 100%;
+    height: 265px;
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.aside,
+.middle{
+    font-size: 1.4em;
+}
+
+.aside > h3,
+.middle > h3{
+    padding-bottom: 15px;
 }
 
 .footer{
@@ -108,26 +169,15 @@ body{
     position: relative;
 }
 
+.gray{
+    color: gray;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
-ul.nav li{
-    display: inline;
-    text-transform: uppercase ;
-    color : lightgrey;
-    padding-right: 10px;
-    font-size: 1.3em;
-}
 
-ul.nav{
-    padding: 0px;
-}
 
-#logo{
-    padding-right: 1.7%;
-    width: 15.74%;
-    margin-bottom: 45px;
-}
