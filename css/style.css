@@ -9,6 +9,8 @@ body{
     width: 80%;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    max-width: 1650px;
+    min-width: 1320px;
 }
 
 /* DIMESIONI HEADER */
@@ -28,13 +30,13 @@ body{
 
 /* BARRA DI NAVIGAZIONE */
 ul.nav{
-    padding: 0px;
+    padding-left: 0px;
 }
 
 ul.nav li{
     display: inline;
     text-transform: uppercase ;
-    padding-right: 10px;
+    margin-right: 10px;
     font-size: 1.3em;
 }
 
@@ -166,7 +168,8 @@ main{
     font-size: 1.5em;
 }
 
-.heart{
+.footer::after{
+    content: '\2764';
     color: red;
     font-size: 1.7em;
 }
